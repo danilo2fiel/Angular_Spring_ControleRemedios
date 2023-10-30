@@ -1,0 +1,9 @@
+<h1>Lista de remédios</h1>
+<ul class="lista" >
+  <li *ngFor="let item of dados" >
+    <div>Nome: <br> <strong>{{ item.nome }}  </strong> id:{{item.id}}
+    </div>
+    <div>Quantidade: <br> <strong>{{item.quantidade}}</strong> </div>
+  </li>
+
+</ul>

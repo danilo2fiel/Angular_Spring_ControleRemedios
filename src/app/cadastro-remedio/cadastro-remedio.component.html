@@ -1,0 +1,89 @@
+<section class="dadosContainer">
+  <div class="enviarDados">
+    <h3>Cadastar Remédio</h3>
+
+    <form (submit)="enviarDados()">
+      <div class="mb-3">
+        <label for="nome" class="form-label">Nome Remério:</label>
+        <input
+        type="text"
+        class="form-control"
+        id="nome"
+        [(ngModel)]="nome" name="nome" required
+        >
+      </div>
+      <div class="mb-3">
+        <label for="quantidade" class="form-label">Quantidade:</label>
+        <input type="number"
+        class="form-control"
+        id="quantidade"
+        [(ngModel)]="quantidade" name="quantidade" required
+        >
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+
+  <div class="deletar">
+    <form (submit)="deletar()">
+
+      <h3>Excluir remédio pelo Id</h3>
+      <div class="mb-3">
+        <label for="quantidade" class="form-label"><img src="" alt="">ID:</label>
+        <input type="number"
+        class="form-control"
+        id="id"
+        [(ngModel)]="id" name="id" required
+        >
+      </div> <br>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+
+  <div class="semana">
+    <h3>Consumo da semana</h3> <br>
+    <button (click)="semana()"
+    class="btn btn-primary"
+    >Enviar</button>
+
+  </div>
+  <div class="editar">
+    <h4>editar remedio</h4>
+    <form (submit)="editar()">
+      <div class="mb-3">
+        <label for="nome" class="form-label">Nome Remério:</label>
+        <input
+        type="text"
+        class="form-control"
+        id="nome"
+        [(ngModel)]="nome" name="nome" required
+        >
+      </div>
+      <div class="mb-3">
+        <label for="quantidade" class="form-label">Quantidade:</label>
+        <input type="number"
+        class="form-control"
+        id="quantidade"
+        [(ngModel)]="quantidade" name="quantidade" required
+        >
+      </div>
+      <div class="mb-3">
+        <label for="id" class="form-label">id:</label>
+        <input type="number"
+        class="form-control"
+        id="id"
+        [(ngModel)]="id" name="id" required
+        >
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+
+
+  </div>
+
+</section>
+
+
+<app-lista-remedio></app-lista-remedio>
+
+
