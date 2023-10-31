@@ -4,7 +4,7 @@ Como Api está sendo usado Java com Spring.
 Como Front está sendo usado TypeScript com Angular.
 O banco de dados atual está sendo o MySql.
 
-##Fucionalidades criadas até o momento que podem ser acessadas pelo front na rota de cadastro:
+## Fucionalidades criadas até o momento que podem ser acessadas pelo front na rota de cadastro:
   - Busca de remédio por id.
   - Atualização de cadastro buscando por id.
   - Deletar remédio.
