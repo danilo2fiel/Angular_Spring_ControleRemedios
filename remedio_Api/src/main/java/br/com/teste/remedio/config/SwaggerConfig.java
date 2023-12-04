@@ -20,7 +20,7 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
 
 	 @Value("${application-version}")
 	    public static String API_VERSION;
-	    public static final String API_SITUACAO = "situacao";
+	    public static final String API_REMEDIO = "remedio";
 
 	    @Bean
 	    public Docket api() {
@@ -51,7 +51,7 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
 	    private ApiInfo getApiInfo() {
 
 	        return new ApiInfoBuilder()
-	                .title("Api REST do Sistema de controle de Painel Digital Indoor Doc")
+	                .title("Api REST do controle de Estoque de Remedios")
 	                .description("Especificação de uso da api")
 	                .version(API_VERSION)
 	                .build();

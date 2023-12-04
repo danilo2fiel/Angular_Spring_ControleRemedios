@@ -13,11 +13,14 @@ import lombok.Setter;
 public class DtoLista {
 
 	private String nome;
-//	private Long quantidade;
+	private Long quantidade;
+	private Long id;
 	
 	public DtoLista (Remedio dados) {
-		this.nome = dados.getNome();
-//		this.quantidade = dados.getQuantidade();	
+		this(dados.getNome(),
+				dados.getQuantidade(),
+				dados.getId()
+				);
 	}
 	
 }

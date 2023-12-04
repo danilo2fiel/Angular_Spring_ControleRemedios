@@ -32,11 +32,17 @@ public class Remedio {
 	private String nome;
 	@Column(name = "rem_quant")
 	private Long quantidade;
+	@Column(name="rem_lab")
+	private String laboratorio;
+	@Column(name="rem_med")
+	private String medico;
 	
 	public Remedio (DtoRemedio dados) {
 		this.nome = dados.getNome();
 		this.quantidade = dados.getQuantidade();
 		this.id = dados.getId();
+		this.medico = dados.getMedico();
+		this.laboratorio = dados.getLaboratorio();
 	}
 	
 	
