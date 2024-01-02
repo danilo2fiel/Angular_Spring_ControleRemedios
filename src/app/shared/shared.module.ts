@@ -4,14 +4,19 @@ import { RemediosService } from './services/remedios.service';
 import { DaoService } from './services/dao.service';
 import { HttpClientModule } from '@angular/common/http';
 import { TesteService } from './services/teste.service';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FormsModule } from '@angular/forms';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    NavbarComponent
+  ],
   imports: [
     CommonModule,
     HttpClientModule,
+    FormsModule
 
   ],
   providers: [
@@ -19,6 +24,10 @@ import { TesteService } from './services/teste.service';
     RemediosService,
     TesteService
 
+  ],
+
+  exports: [
+    NavbarComponent
   ]
 })
 export class SharedModule { }

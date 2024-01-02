@@ -8,18 +8,27 @@
 .enviarDados {
   margin-left: 10px;
   margin-right: 10px;
+  /*
   border: 3px solid black;
+  */
   padding: 20px;
+
 }
 
 .deletar, .semana, .editar {
   margin-left: 10px;
   margin-right: 10px;
+  /*
   border: 3px solid black;
+  */
   padding: 20px;
 
 }
 
 .editar >form{
+  display: flex;
+}
+
+.enviarDados >form{
   display: flex;
 }

@@ -1,2 +1,40 @@
-<p>remedio works!</p>
 
+<div class="container_remedio">
+
+  <div class="form">
+    <form class="d-flex" role="search"
+    (submit)="getRemedio()">
+
+    <input
+    class="form-control me-2"
+    type="number" placeholder="Search"
+    aria-label="Search"
+    id="id"
+    [value]="id"
+    (input)="onInputChange($event)"
+    name="id"  required>
+    <button class="btn btn-outline-success" type="submit"
+    >Search</button>
+
+    </form>
+  </div>
+
+  <div *ngIf="dados">
+    <h1>NOME: {{ dados.nome }}</h1>
+    <h1>MÉDICO: {{ dados.medico }}</h1>
+    <h1>ESTOQUE: {{ dados.quantidade }}</h1>
+    <h1>LABORATÓRIO: {{ dados.laboratorio }}</h1>
+    <!-- Adicione mais elementos conforme necessário -->
+  </div>
+  <ul class="lista" >
+    <li *ngFor="let item of getGeral" >
+      <div>
+        <strong>{{ item.nome }}  </strong> id:{{item.id}}
+      </div>
+      <div>
+        Quantidade: <br> <strong>{{item.quantidade}}</strong>
+      </div>
+    </li>
+
+  </ul>
+</div>

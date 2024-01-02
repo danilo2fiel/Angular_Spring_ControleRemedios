@@ -32,4 +32,8 @@ export class TesteService {
     const body = {nome, quantidade, id }
     return this.http.put(this.apiUrl+'/'+id, body);
   }
+
+  getRemedioById(id: number){
+    return this.http.get(this.apiUrl+'/'+id)
+  }
 }

@@ -10,13 +10,15 @@ import { SharedModule } from './shared/shared.module';
 import { BootstrapModule } from './bootstrap/bootstrap.module';
 import { AppState } from './AppState';
 import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RemedioComponent,
     ListaRemedioComponent,
-    CadastroRemedioComponent
+    CadastroRemedioComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
